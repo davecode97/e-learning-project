@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.1.0/css/bootstrap.min.css">
+    <title>Home</title>
+
+
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="navbar navbar-extend-lg navbar-light bg-light">
+                <div class="d-flex">
+                    <div class="mr-auto p-2"><h3 class="h3 ml-3">E-Learning</h3></div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item"><a th:href="@{/register}">Register</a></li>
+                            <li class="list-group-item"><a th:href="@{/login}">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

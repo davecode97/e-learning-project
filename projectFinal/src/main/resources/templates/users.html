@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.1.0/css/bootstrap.min.css">
+    <title>Menu</title>
+</head>
+<body>
+<div>
+    <header>
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="d-flex">
+                <div class="mr-auto p-2"><h3 class="h3 ml-3">E-Learning</h3></div>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<div>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item"><a th:href="@{/contact-form}">Contact</a></li>
+                        <li class="list-group-item"><a th:href="@{/course-form}">Course</a></li>
+                        <li class="list-group-item"><a th:href="@{/feedback-form}">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

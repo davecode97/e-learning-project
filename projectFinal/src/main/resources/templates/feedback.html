@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.1.0/css/bootstrap.min.css">
+    <title>Feedback</title>
+</head>
+<body>
+<div>
+    <header>
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="d-flex">
+                <div class="mr-auto p-2"><h3 class="h3 ml-3">E-Learning</h3></div>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<div>
+    <div class="container mb-3">
+        <div class="row">
+            <div class="card col-md-6 offset-md-3 offset-md-3 mt-4">
+                <div class="card-body">
+                    <div class="card-head text-center">
+                        <h3 class="h3">Feedback</h3>
+                    </div>
+                    <br>
+                    <form th:action="@{/process_feedback}" th:object="${feedback}" method="post">
+                        <div class="form-group">
+                            Name    <input type="text" class="form-control" required th:field="*{Name}"/>
+                        </div>
+                        <div class="form-group">
+                            E-Mail  <input type="email" class="form-control" required th:field="*{Email}"/>
+                        </div>
+                        <div class="form-group">
+                            Feedback <textarea class="form-control" required th:field="*{Feedback}"></textarea>
+                        </div>
+
+                        <hr/>
+                        <div class="mb-3">
+                            <button class="btn btn-primary">Sent</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
