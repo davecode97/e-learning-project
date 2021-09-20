@@ -1,3 +1,4 @@
+#Queryes
 CREATE DATABASE amdocs;
 
 SELECT * FROM users;
